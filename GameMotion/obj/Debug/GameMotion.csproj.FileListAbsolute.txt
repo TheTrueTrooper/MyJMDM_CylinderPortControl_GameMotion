@@ -1,0 +1,12 @@
+C:\Users\Angelo's Tower PC\source\repos\MyJMDM_CylinderPortControl\GameMotion\obj\Debug\GameMotion.csprojAssemblyReference.cache
+C:\Users\Angelo's Tower PC\source\repos\MyJMDM_CylinderPortControl\GameMotion\obj\Debug\GameMotion.csproj.CoreCompileInputs.cache
+C:\Users\Angelo's Tower PC\source\repos\MyJMDM_CylinderPortControl\GameMotion\bin\Debug\GameMotion.exe.config
+C:\Users\Angelo's Tower PC\source\repos\MyJMDM_CylinderPortControl\GameMotion\bin\Debug\GameMotion.exe
+C:\Users\Angelo's Tower PC\source\repos\MyJMDM_CylinderPortControl\GameMotion\bin\Debug\GameMotion.pdb
+C:\Users\Angelo's Tower PC\source\repos\MyJMDM_CylinderPortControl\GameMotion\obj\Debug\GameMotion.exe
+C:\Users\Angelo's Tower PC\source\repos\MyJMDM_CylinderPortControl\GameMotion\obj\Debug\GameMotion.pdb
+C:\Users\Angelo's Tower PC\source\repos\MyJMDM_CylinderPortControl\GameMotion\bin\Debug\JMDM_Basic_Ride_Control.dll
+C:\Users\Angelo's Tower PC\source\repos\MyJMDM_CylinderPortControl\GameMotion\bin\Debug\MyJMDM_CylinderPortControl.dll
+C:\Users\Angelo's Tower PC\source\repos\MyJMDM_CylinderPortControl\GameMotion\bin\Debug\JMDM_Basic_Ride_Control.pdb
+C:\Users\Angelo's Tower PC\source\repos\MyJMDM_CylinderPortControl\GameMotion\bin\Debug\MyJMDM_CylinderPortControl.pdb
+C:\Users\Angelo's Tower PC\source\repos\MyJMDM_CylinderPortControl\GameMotion\obj\Debug\GameMotion.csproj.CopyComplete
