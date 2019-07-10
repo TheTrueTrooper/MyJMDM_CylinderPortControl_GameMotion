@@ -46,9 +46,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MyJMDM_CylinderPortControl\MyJMDM_CylinderPortControl.csproj">
+    <ProjectReference Include="..\MyJMDM_CylinderPortControl\MyJMDM_CylinderPortControl_Updated.csproj">
       <Project>{a003e5bb-1301-4046-a7e5-bda0829511f1}</Project>
-      <Name>MyJMDM_CylinderPortControl</Name>
+      <Name>MyJMDM_CylinderPortControl_Updated</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

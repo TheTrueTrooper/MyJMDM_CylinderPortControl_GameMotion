@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyJMDM_CylinderPortControl", "MyJMDM_CylinderPortControl\MyJMDM_CylinderPortControl.csproj", "{A003E5BB-1301-4046-A7E5-BDA0829511F1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyJMDM_CylinderPortControl_Updated", "MyJMDM_CylinderPortControl\MyJMDM_CylinderPortControl_Updated.csproj", "{A003E5BB-1301-4046-A7E5-BDA0829511F1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JMDM_Basic_Ride_Control", "JMDM_Basic_Ride_Control\JMDM_Basic_Ride_Control.csproj", "{DAD57750-6CC7-4D6C-87CD-A18FCD1E136A}"
 EndProject
