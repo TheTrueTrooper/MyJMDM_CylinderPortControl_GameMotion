@@ -7,3 +7,5 @@ C:\Users\Angelo's Tower PC\source\repos\MyJMDM_CylinderPortControl\JMDM_Basic_Ri
 C:\Users\Angelo's Tower PC\source\repos\MyJMDM_CylinderPortControl\JMDM_Basic_Ride_Control\obj\Debug\JMDM_Basic_Ride_Control.csproj.CopyComplete
 C:\Users\Angelo's Tower PC\source\repos\MyJMDM_CylinderPortControl\JMDM_Basic_Ride_Control\obj\Debug\JMDM_Basic_Ride_Control.dll
 C:\Users\Angelo's Tower PC\source\repos\MyJMDM_CylinderPortControl\JMDM_Basic_Ride_Control\obj\Debug\JMDM_Basic_Ride_Control.pdb
+C:\Users\Angelo's Tower PC\source\repos\MyJMDM_CylinderPortControl\JMDM_Basic_Ride_Control\bin\Debug\TimingData.dll
+C:\Users\Angelo's Tower PC\source\repos\MyJMDM_CylinderPortControl\JMDM_Basic_Ride_Control\bin\Debug\TimingData.pdb

@@ -6,29 +6,38 @@ using System.Threading.Tasks;
 using System.Threading;
 using System.IO;
 using MyJMDM_CylinderPortControl;
+using TimingData;
 
 namespace JMDM_Basic_Ride_Control
 {
     public static class JMDM_BasicRide
     {
-        public static void JMDM_BasicRide_Run(string Port, StreamReader CommandData, Action ExtraAction = null)
+        public static void JMDM_BasicRide_Run(string Port, byte CylinderCount, string JMMovFilePath, int StartWait = 2000, int EndWait = 2000, Action ExtraAction = null)
         {
-            List<CommandSetLine> LineCommands = CommandSetLine.LoadLineCommandsFromTextStream(CommandData);
-            JMDM_CylinderPortControlUpdated CylinderControl = new JMDM_CylinderPortControlUpdated(Port, LineCommands[0].CylinderHeights.Count());
+            PositionAndTimingDataModel PositionAndTiming = PositionAndTimingDataModel.DataLoadFromFile(JMMovFilePath);
+            JMDM_CylinderPortControlUpdated CylinderControl = new JMDM_CylinderPortControlUpdated(Port, CylinderCount);
+
+            if (CylinderCount > 6)
+                CylinderCount = 6;
 
             CylinderControl.Open_Port();
 
-            Thread.Sleep(2000);
+            CylinderControl.ZeroAllCylinders();
 
-            for (int i = 1; i < LineCommands.Count; i++)
+            Thread.Sleep(StartWait);
+
+            ExtraAction?.Invoke();
+
+            foreach(MomentaryPositionAndTimingFrameDataModel Frame in PositionAndTiming)
             {
-                CylinderControl.SetAllCylinders(LineCommands[i].CylinderHeights);
-                ExtraAction?.Invoke();
-                Thread.Sleep(LineCommands[i].WaitTime);
+                for(byte i = 0; i < CylinderCount; i++)
+                 CylinderControl.SetCylinderHeight(i, Frame.GetCylinder(i));
+                Thread.Sleep((int)Frame.time);
             }
 
             CylinderControl.ZeroAllCylinders();
-            Thread.Sleep(2000);
+
+            Thread.Sleep(EndWait);
         }
     }
 }

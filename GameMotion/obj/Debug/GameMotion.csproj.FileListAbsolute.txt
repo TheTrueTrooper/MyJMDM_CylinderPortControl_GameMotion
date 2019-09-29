@@ -10,3 +10,6 @@ C:\Users\Angelo's Tower PC\source\repos\MyJMDM_CylinderPortControl\GameMotion\bi
 C:\Users\Angelo's Tower PC\source\repos\MyJMDM_CylinderPortControl\GameMotion\bin\Debug\JMDM_Basic_Ride_Control.pdb
 C:\Users\Angelo's Tower PC\source\repos\MyJMDM_CylinderPortControl\GameMotion\bin\Debug\MyJMDM_CylinderPortControl.pdb
 C:\Users\Angelo's Tower PC\source\repos\MyJMDM_CylinderPortControl\GameMotion\obj\Debug\GameMotion.csproj.CopyComplete
+C:\Users\Angelo's Tower PC\source\repos\MyJMDM_CylinderPortControl\GameMotion\bin\Debug\TimingData.dll
+C:\Users\Angelo's Tower PC\source\repos\MyJMDM_CylinderPortControl\GameMotion\bin\Debug\TimingData.pdb
+C:\Users\Angelo's Tower PC\source\repos\MyJMDM_CylinderPortControl\GameMotion\bin\Debug\GameStarter.bat

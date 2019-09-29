@@ -41,11 +41,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CommandSetLine.cs" />
     <Compile Include="JMDM_BasicRide.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\TimingData\TimingData\TimingData.csproj">
+      <Project>{90b742a5-1957-4817-a44c-06c708bc88a9}</Project>
+      <Name>TimingData</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MyJMDM_CylinderPortControl\MyJMDM_CylinderPortControl_Updated.csproj">
       <Project>{a003e5bb-1301-4046-a7e5-bda0829511f1}</Project>
       <Name>MyJMDM_CylinderPortControl_Updated</Name>
