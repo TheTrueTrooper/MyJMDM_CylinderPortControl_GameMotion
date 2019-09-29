@@ -1,0 +1,6 @@
+C:\Users\Angelo's Tower PC\source\repos\TimingData\TimingData\bin\Debug\TimingData.dll
+C:\Users\Angelo's Tower PC\source\repos\TimingData\TimingData\bin\Debug\TimingData.pdb
+C:\Users\Angelo's Tower PC\source\repos\TimingData\TimingData\obj\Debug\TimingData.csprojAssemblyReference.cache
+C:\Users\Angelo's Tower PC\source\repos\TimingData\TimingData\obj\Debug\TimingData.csproj.CoreCompileInputs.cache
+C:\Users\Angelo's Tower PC\source\repos\TimingData\TimingData\obj\Debug\TimingData.dll
+C:\Users\Angelo's Tower PC\source\repos\TimingData\TimingData\obj\Debug\TimingData.pdb

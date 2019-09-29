@@ -1,0 +1,13 @@
+C:\Users\Angelo's Tower PC\source\repos\TimingData\QuickConverter\bin\Debug\QuickConverter.exe.config
+C:\Users\Angelo's Tower PC\source\repos\TimingData\QuickConverter\bin\Debug\QuickConverter.exe
+C:\Users\Angelo's Tower PC\source\repos\TimingData\QuickConverter\bin\Debug\QuickConverter.pdb
+C:\Users\Angelo's Tower PC\source\repos\TimingData\QuickConverter\obj\Debug\QuickConverter.csprojAssemblyReference.cache
+C:\Users\Angelo's Tower PC\source\repos\TimingData\QuickConverter\obj\Debug\QuickConverter.Form1.resources
+C:\Users\Angelo's Tower PC\source\repos\TimingData\QuickConverter\obj\Debug\QuickConverter.Properties.Resources.resources
+C:\Users\Angelo's Tower PC\source\repos\TimingData\QuickConverter\obj\Debug\QuickConverter.csproj.GenerateResource.cache
+C:\Users\Angelo's Tower PC\source\repos\TimingData\QuickConverter\obj\Debug\QuickConverter.csproj.CoreCompileInputs.cache
+C:\Users\Angelo's Tower PC\source\repos\TimingData\QuickConverter\obj\Debug\QuickConverter.exe
+C:\Users\Angelo's Tower PC\source\repos\TimingData\QuickConverter\obj\Debug\QuickConverter.pdb
+C:\Users\Angelo's Tower PC\source\repos\TimingData\QuickConverter\bin\Debug\TimingData.dll
+C:\Users\Angelo's Tower PC\source\repos\TimingData\QuickConverter\bin\Debug\TimingData.pdb
+C:\Users\Angelo's Tower PC\source\repos\TimingData\QuickConverter\obj\Debug\QuickConverter.csproj.CopyComplete
