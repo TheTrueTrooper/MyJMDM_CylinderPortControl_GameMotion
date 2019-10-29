@@ -12,4 +12,4 @@ C:\Users\Angelo's Tower PC\source\repos\MyJMDM_CylinderPortControl\GameMotion\bi
 C:\Users\Angelo's Tower PC\source\repos\MyJMDM_CylinderPortControl\GameMotion\obj\Debug\GameMotion.csproj.CopyComplete
 C:\Users\Angelo's Tower PC\source\repos\MyJMDM_CylinderPortControl\GameMotion\bin\Debug\TimingData.dll
 C:\Users\Angelo's Tower PC\source\repos\MyJMDM_CylinderPortControl\GameMotion\bin\Debug\TimingData.pdb
-C:\Users\Angelo's Tower PC\source\repos\MyJMDM_CylinderPortControl\GameMotion\bin\Debug\GameStarter.bat
+C:\Users\Angelo's Tower PC\source\repos\MyJMDM_CylinderPortControl\GameMotion\bin\Debug\ReadMeHelpFile.txt

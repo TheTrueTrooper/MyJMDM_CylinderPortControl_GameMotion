@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
-    <StartArguments>-Com:6 -File:"C:\Users\Angelo%27s Tower PC\Desktop\Game Move Data\CXV.Files\3 dof suitable all 3dof machine\03-Birth of baby_3DOF.JMMov" -StartWait:4000 -EndWait:4000 -NumberOfCylinder:3</StartArguments>
+    <StartArguments>-Com:6 -File:"C:\Users\Angelo%27s Tower PC\Desktop\Game Move Data\CXV.Files\3 dof suitable all 3dof machine\03-Birth of baby_3DOF.JMMov" -StartWait:4000 -EndWait:4000 -NumberOfCylinder:3 -ProccesName:Discord -AddInput:"Wait%283000%29 keydown%28space%29 Wait%28300%29 keyup%28space%29"</StartArguments>
   </PropertyGroup>
 </Project>
