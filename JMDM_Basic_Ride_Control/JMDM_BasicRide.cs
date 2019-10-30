@@ -12,10 +12,10 @@ namespace JMDM_Basic_Ride_Control
 {
     public static class JMDM_BasicRide
     {
-        public static void JMDM_BasicRide_Run(string Port, byte CylinderCount, string JMMovFilePath, int StartWait = 2000, int EndWait = 2000, Action ExtraAction = null)
+        public static void JMDM_BasicRide_Run(out JMDM_CylinderPortControlUpdated CylinderControl, string Port, byte CylinderCount, string JMMovFilePath, int StartWait = 2000, int EndWait = 2000, Action ExtraAction = null)
         {
             PositionAndTimingDataModel PositionAndTiming = PositionAndTimingDataModel.DataLoadFromFile(JMMovFilePath);
-            JMDM_CylinderPortControlUpdated CylinderControl = new JMDM_CylinderPortControlUpdated(Port, CylinderCount);
+            CylinderControl = new JMDM_CylinderPortControlUpdated(Port, CylinderCount);
 
             if (CylinderCount > 6)
                 CylinderCount = 6;

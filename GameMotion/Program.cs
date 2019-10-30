@@ -9,11 +9,16 @@ using JMDM_Basic_Ride_Control;
 using System.Diagnostics;
 using System.Threading;
 using System.Drawing;
+using MyJMDM_CylinderPortControl;
 
 namespace GameMotion
 {
     class Program
     {
+        static JMDM_CylinderPortControlUpdated ComPort = null;
+
+        static string PortStatic;
+
         static void Main(string[] args)
         {
             //-Com:6 -File:"C:\\Users\\Angelo's Tower PC\\Desktop\\Game Move Data\\CXV.Files\\3 dof suitable all 3dof machine\\03-Birth of baby_3DOF.JMMov" -StartWait:4000 -EndWait:4000 -NumberOfCylinder:6
@@ -97,6 +102,8 @@ namespace GameMotion
             {
                 EndWaitInput = EndWaitInput.Replace("-EndWait:", "").ToUpper();
             }
+
+            PortStatic = Port;
 
             try
             {
@@ -189,7 +196,9 @@ namespace GameMotion
                     Command.Invoke();
                 }
 
-                JMDM_BasicRide.JMDM_BasicRide_Run(Port, NumberOfCylinders, DataFile, StartWait, EndWait);
+                AppDomain.CurrentDomain.ProcessExit += ProcessExit;
+                 
+                JMDM_BasicRide.JMDM_BasicRide_Run(out ComPort, Port, NumberOfCylinders, DataFile, StartWait, EndWait);
             }
             catch(Exception e)
             {
@@ -202,6 +211,22 @@ namespace GameMotion
             }
 
             // Go to http://aka.ms/dotnet-get-started-console to continue learning how to build a console app! 
+        }
+
+        private static void ProcessExit(object sender, EventArgs e)
+        {
+            try
+            {
+                ComPort.ZeroAllCylinders();
+            }
+            catch
+            {
+                using (ComPort = new JMDM_CylinderPortControlUpdated(PortStatic, 6))
+                {
+                    ComPort.Open_Port();
+                    ComPort.ZeroAllCylinders();
+                }
+            }
         }
 
         static byte GetKeyCode(string input)

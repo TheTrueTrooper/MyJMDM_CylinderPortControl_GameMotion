@@ -58,6 +58,10 @@
       <Project>{dad57750-6cc7-4d6c-87cd-a18fcd1e136a}</Project>
       <Name>JMDM_Basic_Ride_Control</Name>
     </ProjectReference>
+    <ProjectReference Include="..\MyJMDM_CylinderPortControl\MyJMDM_CylinderPortControl_Updated.csproj">
+      <Project>{A003E5BB-1301-4046-A7E5-BDA0829511F1}</Project>
+      <Name>MyJMDM_CylinderPortControl_Updated</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="ReadMeHelpFile.txt">
