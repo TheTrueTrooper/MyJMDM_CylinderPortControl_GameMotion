@@ -10,11 +10,93 @@ using System.Diagnostics;
 using System.Threading;
 using System.Drawing;
 using MyJMDM_CylinderPortControl;
+using System.Runtime.InteropServices;
 
 namespace GameMotion
 {
+
+
     class Program
     {
+        #region Page Event Setup
+        enum ConsoleCtrlHandlerCode : uint
+        {
+            CTRL_C_EVENT = 0,
+            CTRL_BREAK_EVENT = 1,
+            CTRL_CLOSE_EVENT = 2,
+            CTRL_LOGOFF_EVENT = 5,
+            CTRL_SHUTDOWN_EVENT = 6
+        }
+
+        delegate bool ConsoleCtrlHandlerDelegate(ConsoleCtrlHandlerCode eventCode);
+
+        [DllImport("kernel32.dll")]
+        static extern bool SetConsoleCtrlHandler(ConsoleCtrlHandlerDelegate handlerProc, bool add);
+
+        static ConsoleCtrlHandlerDelegate ConsoleHandler;
+
+        #endregion
+
+        #region Page Events
+        static bool ConsoleEventHandler(ConsoleCtrlHandlerCode eventCode)
+        {
+            // Handle close event here...
+            switch (eventCode)
+            {
+                case ConsoleCtrlHandlerCode.CTRL_CLOSE_EVENT:
+                    try
+                    {
+                        ComPort.ZeroAllCylinders();
+                    }
+                    catch
+                    {
+                        using (ComPort = new JMDM_CylinderPortControlUpdated(PortStatic, 6))
+                        {
+                            ComPort.Open_Port();
+                            ComPort.ZeroAllCylinders();
+                        }
+                    }
+                    Environment.Exit(0);
+                    break;
+                case ConsoleCtrlHandlerCode.CTRL_BREAK_EVENT:
+                    break;
+                case ConsoleCtrlHandlerCode.CTRL_LOGOFF_EVENT:
+                    try
+                    {
+                        ComPort.ZeroAllCylinders();
+                    }
+                    catch
+                    {
+                        using (ComPort = new JMDM_CylinderPortControlUpdated(PortStatic, 6))
+                        {
+                            ComPort.Open_Port();
+                            ComPort.ZeroAllCylinders();
+                        }
+                    }
+                    Environment.Exit(0);
+                    break;
+                case ConsoleCtrlHandlerCode.CTRL_SHUTDOWN_EVENT:
+                    try
+                    {
+                        ComPort.ZeroAllCylinders();
+                    }
+                    catch
+                    {
+                        using (ComPort = new JMDM_CylinderPortControlUpdated(PortStatic, 6))
+                        {
+                            ComPort.Open_Port();
+                            ComPort.ZeroAllCylinders();
+                        }
+                    }
+                    Environment.Exit(0);
+                    break;
+            }
+
+            return (false);
+        }
+        #endregion
+
+
         static JMDM_CylinderPortControlUpdated ComPort = null;
 
         static string PortStatic;
@@ -196,8 +278,9 @@ namespace GameMotion
                     Command.Invoke();
                 }
 
-                AppDomain.CurrentDomain.ProcessExit += ProcessExit;
-                 
+                ConsoleHandler = new ConsoleCtrlHandlerDelegate(ConsoleEventHandler);
+                SetConsoleCtrlHandler(ConsoleHandler, true);
+
                 JMDM_BasicRide.JMDM_BasicRide_Run(out ComPort, Port, NumberOfCylinders, DataFile, StartWait, EndWait);
             }
             catch(Exception e)
@@ -211,22 +294,6 @@ namespace GameMotion
             }
 
             // Go to http://aka.ms/dotnet-get-started-console to continue learning how to build a console app! 
-        }
-
-        private static void ProcessExit(object sender, EventArgs e)
-        {
-            try
-            {
-                ComPort.ZeroAllCylinders();
-            }
-            catch
-            {
-                using (ComPort = new JMDM_CylinderPortControlUpdated(PortStatic, 6))
-                {
-                    ComPort.Open_Port();
-                    ComPort.ZeroAllCylinders();
-                }
-            }
         }
 
         static byte GetKeyCode(string input)
