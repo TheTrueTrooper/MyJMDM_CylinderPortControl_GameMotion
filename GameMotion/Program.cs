@@ -11,6 +11,7 @@ using System.Threading;
 using System.Drawing;
 using MyJMDM_CylinderPortControl;
 using System.Runtime.InteropServices;
+using KeyBoardInputSim;
 
 namespace GameMotion
 {
@@ -247,25 +248,25 @@ namespace GameMotion
                     {
                         string[] Params = Command.Split('(')[1].Split(')')[0].Split(',');
                         Point P = new Point(int.Parse(Params[0]), int.Parse(Params[1]));
-                        Actions.Add(new Action(() => { Window.SendMouseDown(WindowHandleInfo.MouseButton.MK_LBUTTON, P); }));
+                        Actions.Add(new Action(() => { Window.SetForegroundWindow(); Window.SendMouseDown(WindowHandleInfo.MouseButton.MK_LBUTTON, P); }));
                     }
                     else if (Command.ToLower().StartsWith("leftmouseclickup"))
                     {
                         string[] Params = Command.Split('(')[1].Split(')')[0].Split(',');
                         Point P = new Point(int.Parse(Params[0]), int.Parse(Params[1]));
-                        Actions.Add(new Action(() => { Window.SendMouseUp(WindowHandleInfo.MouseButton.MK_LBUTTON, P); }));
+                        Actions.Add(new Action(() => { Window.SetForegroundWindow(); Window.SendMouseUp(WindowHandleInfo.MouseButton.MK_LBUTTON, P); }));
                     }
                     else if (Command.ToLower().StartsWith("keydown"))
                     {
                         string[] Params = Command.Split('(')[1].Split(')')[0].Split(',');
                         byte AsciiValue = Program.GetKeyCode(Params[0]);
-                        Actions.Add(new Action(() => { Window.SendKeyDown(AsciiValue); }));
+                        Actions.Add(new Action(() => { Window.SetForegroundWindow(); KeyboardInputInjector.KeyDownRaw((KeyboardInputInjector.ScanCodeShort)AsciiValue); }));
                     }
                     else if (Command.ToLower().StartsWith("keyup"))
                     {
                         string[] Params = Command.Split('(')[1].Split(')')[0].Split(',');
                         byte AsciiValue = Program.GetKeyCode(Params[0]);
-                        Actions.Add(new Action(() => { Window.SendKeyUp(AsciiValue); }));
+                        Actions.Add(new Action(() => { Window.SetForegroundWindow(); KeyboardInputInjector.KeyDownRaw((KeyboardInputInjector.ScanCodeShort)AsciiValue); }));
                     }
                     else
                         throw new Exception($"unreconized add input command {Command}");

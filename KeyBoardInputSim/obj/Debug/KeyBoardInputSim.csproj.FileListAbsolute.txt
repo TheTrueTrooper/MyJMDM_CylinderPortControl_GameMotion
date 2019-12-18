@@ -1,0 +1,6 @@
+C:\Users\Angelo's Tower PC\source\repos\MyJMDM_CylinderPortControl\KeyBoardInputSim\bin\Debug\KeyBoardInputSim.dll
+C:\Users\Angelo's Tower PC\source\repos\MyJMDM_CylinderPortControl\KeyBoardInputSim\bin\Debug\KeyBoardInputSim.pdb
+C:\Users\Angelo's Tower PC\source\repos\MyJMDM_CylinderPortControl\KeyBoardInputSim\obj\Debug\KeyBoardInputSim.csprojAssemblyReference.cache
+C:\Users\Angelo's Tower PC\source\repos\MyJMDM_CylinderPortControl\KeyBoardInputSim\obj\Debug\KeyBoardInputSim.csproj.CoreCompileInputs.cache
+C:\Users\Angelo's Tower PC\source\repos\MyJMDM_CylinderPortControl\KeyBoardInputSim\obj\Debug\KeyBoardInputSim.dll
+C:\Users\Angelo's Tower PC\source\repos\MyJMDM_CylinderPortControl\KeyBoardInputSim\obj\Debug\KeyBoardInputSim.pdb

@@ -13,3 +13,5 @@ C:\Users\Angelo's Tower PC\source\repos\MyJMDM_CylinderPortControl\GameMotion\ob
 C:\Users\Angelo's Tower PC\source\repos\MyJMDM_CylinderPortControl\GameMotion\bin\Debug\TimingData.dll
 C:\Users\Angelo's Tower PC\source\repos\MyJMDM_CylinderPortControl\GameMotion\bin\Debug\TimingData.pdb
 C:\Users\Angelo's Tower PC\source\repos\MyJMDM_CylinderPortControl\GameMotion\bin\Debug\ReadMeHelpFile.txt
+C:\Users\Angelo's Tower PC\source\repos\MyJMDM_CylinderPortControl\GameMotion\bin\Debug\KeyBoardInputSim.dll
+C:\Users\Angelo's Tower PC\source\repos\MyJMDM_CylinderPortControl\GameMotion\bin\Debug\KeyBoardInputSim.pdb

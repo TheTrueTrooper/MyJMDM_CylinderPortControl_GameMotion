@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimingData", "TimingData\Ti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickConverter", "QuickConverter\QuickConverter.csproj", "{D40F5581-1740-4FE1-90B9-394CD2E2F1C3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyBoardInputSim", "KeyBoardInputSim\KeyBoardInputSim.csproj", "{9B41020F-953E-4293-BA27-61025CCC612B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{D40F5581-1740-4FE1-90B9-394CD2E2F1C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D40F5581-1740-4FE1-90B9-394CD2E2F1C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D40F5581-1740-4FE1-90B9-394CD2E2F1C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B41020F-953E-4293-BA27-61025CCC612B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B41020F-953E-4293-BA27-61025CCC612B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B41020F-953E-4293-BA27-61025CCC612B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B41020F-953E-4293-BA27-61025CCC612B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

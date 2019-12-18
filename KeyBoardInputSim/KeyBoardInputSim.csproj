@@ -4,17 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{41BC7CAD-993F-4697-AE6E-24D7AFDB1FD4}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>GameMotion</RootNamespace>
-    <AssemblyName>GameMotion</AssemblyName>
+    <ProjectGuid>{9B41020F-953E-4293-BA27-61025CCC612B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KeyBoardInputSim</RootNamespace>
+    <AssemblyName>KeyBoardInputSim</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <TargetFrameworkProfile />
+    <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -35,8 +33,6 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -45,32 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="KeyboardInputInjector.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Rectangle.cs" />
-    <Compile Include="WindowHandleInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\JMDM_Basic_Ride_Control\JMDM_Basic_Ride_Control.csproj">
-      <Project>{dad57750-6cc7-4d6c-87cd-a18fcd1e136a}</Project>
-      <Name>JMDM_Basic_Ride_Control</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\KeyBoardInputSim\KeyBoardInputSim.csproj">
-      <Project>{9b41020f-953e-4293-ba27-61025ccc612b}</Project>
-      <Name>KeyBoardInputSim</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\MyJMDM_CylinderPortControl\MyJMDM_CylinderPortControl_Updated.csproj">
-      <Project>{A003E5BB-1301-4046-A7E5-BDA0829511F1}</Project>
-      <Name>MyJMDM_CylinderPortControl_Updated</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="ReadMeHelpFile.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
